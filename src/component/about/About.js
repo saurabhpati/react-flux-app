@@ -2,15 +2,15 @@ import React from 'react';
 
 export default class About extends React.Component {
     render() {
+        var techs = ['React', 'React DOM', 'React Router', 'Flux'];
+        techs = techs.map(tech => <li>{tech}</li>);
+
         return (
             <div>
                 <h2>About</h2>
                 <p>This application uses or will use the following tech stack.</p>
                 <ul>
-                    <li>React</li>
-                    <li>React DOM</li>
-                    <li>React Router</li>
-                    <li>Flux</li>
+                    {techs}
                 </ul>
             </div>
         );
